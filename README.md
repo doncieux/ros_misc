@@ -3,4 +3,4 @@ Miscellaneous ROS code
 
 There are some simple ROS nodes.
 
-This code is experimental, don't expect it to be stable.
+* fastsim_to_turtlebot: contains a ROS node to have fastsim controllers control a turtlebot.
