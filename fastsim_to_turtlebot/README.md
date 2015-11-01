@@ -7,3 +7,4 @@ The bumper and scan are read from turtlebot topics and transmitted to fastsim to
 
 The motors are read from fastsim topics and transmitted to turtlebot ones.
 
+turtlebot.launch is to be launched in the turtlebot. It launched all the nodes required to access to the turtlebot, including the kinect and the translation from pointcloud to laserscan.
