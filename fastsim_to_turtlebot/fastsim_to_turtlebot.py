@@ -29,7 +29,8 @@ class TranslateFastsimTurtlebot():
         # Get speed sent to fastsim and translate it to turtlebot
         self.sl_fastsim = rospy.Subscriber("/simu_fastsim/speed_left", Float32, self.Speed_left_callback)
         self.sr_fastsim = rospy.Subscriber("/simu_fastsim/speed_right", Float32, self.Speed_right_callback)
-        self.cmd_vel = rospy.Publisher('cmd_vel_mux/input/navi', Twist, queue_size=10)
+        #self.cmd_vel = rospy.Publisher('cmd_vel_mux/input/navi', Twist, queue_size=10)
+        self.cmd_vel = rospy.Publisher('mobile_base/commands/velocity', Twist, queue_size=10)
 
      
         # Get bumpers from the turtlebot and translate it to fastsim scripts
